@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white-color: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --egg-shell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--egg-shell);
+  font-family: "outfit", sans-serif;
+  color: var(--dark-charcoal);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: var(--Nutmeg);
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* .container {
+  width: 1440px;
+  margin: auto;
+} */
+
+.recipe-container {
+  width: 700px;
+  margin: 90px auto 80px auto;
+  padding: 30px 20px;
+  /* margin: auto; */
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+
+img {
+  display: block;
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.content {
+  width: 95%;
+  margin: auto;
+}
+.preparation {
+  background-color: var(--egg-shell);
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.preparation h3 {
+  color: var(--dark-raspberry);
+  margin-bottom: 10px;
+}
+
+.preparation li {
+  padding-left: 20px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+  color: var(--wenge-brown);
+}
+
+.Ingredients {
+  margin-bottom: 20px;
+  border-bottom: 2px var(--light-gray) solid;
+  padding-bottom: 25px;
+}
+.Ingredients ul {
+  padding-left: 20px;
+}
+
+.Ingredients li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  margin-bottom: 20px;
+  border-bottom: 2px var(--light-gray) solid;
+  padding-bottom: 25px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions li {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.instructions li::marker {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+
+.nutrition div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 25px;
+  border-bottom: 2px var(--light-gray) solid;
+  margin-bottom: 15px;
+}
+
+.nutrition div:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.nutrition p,
+.nutrition span {
+  margin-bottom: 10px;
+}
+
+.nutrition span {
+  color: var(--Nutmeg);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark-charcoal);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
