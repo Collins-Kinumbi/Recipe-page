@@ -46,7 +46,7 @@ p {
 } */
 
 .recipe-container {
-  width: 700px;
+  max-width: 700px;
   margin: 90px auto 80px auto;
   padding: 30px 20px;
   /* margin: auto; */
@@ -153,4 +153,26 @@ a {
   text-align: center;
   font-size: 18px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .recipe-container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    border-radius: 0;
+    margin-bottom: 50px;
+  }
+
+  img {
+    border-radius: 0;
+    width: 100%;
+  }
+  .preparation {
+    padding: 25px;
+  }
+  .attribution {
+    font-size: 12px;
+  }
 }
